@@ -147,4 +147,24 @@ There are a number of different feature selection techniques that can be used, i
 
 I applied (Chi Squared , Mutual Information , Decision Tree , Random Forest Recursive feature Elimination) feature selection methods and compare the results.
 
+## Data Balancing using SMOTE
+
+I balanced the data using SMOTE algorithm.
+
+## Concept Drift Detection
+
+Concept drift refers to the phenomenon where the statistical properties of a target variable, concept, or underlying data distribution change over time in a predictive modeling or machine learning setting.
+
+It occurs when the assumptions made during model training become invalid or less accurate, leading to a degradation in the model's performance or predictive ability.
+
+Concept drift poses challenges to predictive models because the assumptions made during model training may no longer hold in the evolving data.
+
+As a result, the model's performance can degrade, leading to decreased accuracy or reliability , and since we are dealing with time series data we need to check if there is a drift in the data to get better classification results.
+
+I used DDM (Drift Detection Model) and ADWIN from scikit multi flow library in python to check the drift between each two consecutive chunks. 
+
+## Overall results
+
+I compared the results of all expirements in "covid Data Results" file.
+
 
